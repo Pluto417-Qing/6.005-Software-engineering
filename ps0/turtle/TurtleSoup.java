@@ -98,9 +98,8 @@ public class TurtleSoup {
         double desiredHeading = (90 - Math.toDegrees(angleRad) + 360) % 360;
 
         // Calculate the turn needed (right turn amount)
-        double turn = (desiredHeading - currentHeading + 360) % 360;
 
-        return turn;
+        return (desiredHeading - currentHeading + 360) % 360;
     }
 
     /**
